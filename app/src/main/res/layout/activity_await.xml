@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<RelativeLayout
+    android:layout_marginBottom="@dimen/dp_8"
+    android:layout_marginRight="@dimen/dp_5"
+    android:layout_marginLeft="@dimen/dp_5"
+    android:id="@+id/await_iv"
+    android:layout_alignParentBottom="true"
+    android:background="@mipmap/await"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_150">
+    
+    
+    <ImageView
+        android:id="@+id/await_code"
+        android:layout_marginLeft="@dimen/dp_10"
+      android:layout_centerVertical="true"
+        android:layout_width="@dimen/dp_100"
+        android:layout_height="@dimen/dp_100" />
+</RelativeLayout>
+  
+
+    <com.pili.pldroid.player.widget.PLVideoView
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:id="@+id/video"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:layout_above="@id/await_iv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <ImageView
+        android:scaleType="fitXY"
+        android:id="@+id/await_iv1"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:layout_above="@id/await_iv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</RelativeLayout>

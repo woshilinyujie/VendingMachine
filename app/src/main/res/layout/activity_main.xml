@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hangzhou.hezi.vendingmachine.MView.MRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/home_view"
+    android:layout_height="match_parent"
+    tools:context="com.hangzhou.hezi.vendingmachine.Activity.HomeActivity">
+
+
+
+    <ImageView
+
+        android:id="@+id/home_iv"
+        android:layout_width="@dimen/dp_22"
+        android:layout_height="@dimen/dp_22"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/dp_5"
+        android:layout_marginRight="@dimen/dp_15"
+        android:background="@mipmap/log" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dp_5"
+        android:layout_marginRight="@dimen/dp_5"
+        android:layout_toLeftOf="@id/home_iv"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="@dimen/dp_2"
+            android:text="U家圈"
+            android:textColor="@color/c_666666"
+            android:textSize="@dimen/sp_9" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dp_2"
+            android:text="懂生活 更Dong你"
+            android:textColor="#b2b2b2"
+            android:textSize="@dimen/sp_7" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/home_ll"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_100"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dp_38"
+        android:orientation="horizontal">
+
+
+        <RelativeLayout
+            android:layout_marginLeft="@dimen/dp_15"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_100"
+            android:layout_weight="1">
+        <ImageView
+            android:scaleType="fitXY"
+            android:id="@+id/home_bt_iv1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_100"
+             />
+
+        </RelativeLayout>
+        <ImageView
+            android:id="@+id/home_bt_iv2"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_100"
+            android:layout_weight="1"
+            android:scaleType="fitXY" />
+
+        <LinearLayout
+            android:layout_marginRight="@dimen/dp_15"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_100"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/home_bt_iv3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:scaleType="fitXY"/>
+
+            <ImageView
+                android:id="@+id/home_bt_iv4"
+                android:layout_marginTop="@dimen/dp_5"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:scaleType="fitXY" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:orientation="vertical"
+        android:layout_marginRight="@dimen/dp_15"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:background="@drawable/shape_radius_8_e31500"
+        android:layout_marginTop="@dimen/dp_15"
+        android:layout_marginBottom="@dimen/dp_20"
+        android:layout_above="@id/home_ll"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_320">
+
+
+        <RelativeLayout
+            android:layout_marginTop="@dimen/dp_10"
+            android:paddingRight="@dimen/dp_10"
+            android:paddingLeft="@dimen/dp_10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_centerVertical="true"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:text="臻品特惠购"
+                android:textSize="@dimen/sp_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/home_select_tv3"
+                android:textSize="@dimen/sp_10"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:text=""
+                android:background="@drawable/shape_radius_30_stroke_e31500"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center_vertical"
+                android:layout_width="@dimen/dp_55"
+                android:layout_height="@dimen/dp_20" />
+            <TextView
+
+                android:layout_marginRight="@dimen/dp_8"
+                android:id="@+id/home_select_tv2"
+                android:layout_toLeftOf="@id/home_select_tv3"
+                android:textSize="@dimen/sp_10"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:text=""
+                android:background="@drawable/shape_radius_30_stroke_e31500"
+                android:layout_gravity="center_vertical"
+                android:layout_width="@dimen/dp_55"
+                android:layout_height="@dimen/dp_20" />
+            <TextView
+                android:id="@+id/home_select_tv1"
+                android:layout_marginRight="@dimen/dp_8"
+                android:layout_toLeftOf="@id/home_select_tv2"
+                android:textSize="@dimen/sp_10"
+                android:textColor="#d01603"
+                android:gravity="center"
+                android:text=""
+                android:background="@drawable/shape_radius_8_ffffff"
+                android:layout_gravity="center_vertical"
+                android:layout_width="@dimen/dp_55"
+                android:layout_height="@dimen/dp_20" />
+
+        </RelativeLayout>
+
+        <com.hangzhou.hezi.vendingmachine.MView.NoScrollViewPager
+            android:layout_marginBottom="@dimen/dp_5"
+            android:id="@+id/home_view_pager"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_height="match_parent">
+
+
+        </com.hangzhou.hezi.vendingmachine.MView.NoScrollViewPager>
+
+    </LinearLayout>
+    <!--顶部banner-->
+    <com.youth.banner.Banner
+
+        android:layout_above="@id/ll1"
+        android:id="@+id/home_banner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        app:indicator_drawable_selected="@drawable/shape_banner_indicator_selector"
+        app:indicator_drawable_unselected="@drawable/shape_banner_indicator_unselector"
+        app:indicator_margin="@dimen/dp_2"
+        app:indicator_width="@dimen/dp_10" />
+</com.hangzhou.hezi.vendingmachine.MView.MRelativeLayout>

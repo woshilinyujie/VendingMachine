@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:background="@drawable/shape_radius_4_ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:textStyle="bold"
+            android:lineSpacingExtra="@dimen/dp_3"
+            android:id="@+id/dialog_msg1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/dp_56"
+            android:layout_marginRight="@dimen/dp_56"
+            android:layout_marginTop="@dimen/dp_20"
+            android:gravity="center"
+            android:text="对不起！"
+            android:textColor="#1a1a1a"
+            android:textSize="@dimen/sp_18" />
+        <TextView
+            android:id="@+id/dialog_msg2"
+            android:lineSpacingExtra="@dimen/dp_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/dp_56"
+            android:layout_marginRight="@dimen/dp_56"
+            android:layout_marginTop="@dimen/dp_10"
+            android:gravity="center"
+            android:text="输入的注册信息有误！"
+            android:textColor="@color/c_666666"
+            android:textSize="@dimen/sp_13" />
+
+
+        <LinearLayout
+            android:layout_marginBottom="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_35"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+
+            <TextView
+
+                android:layout_marginRight="@dimen/dp_40"
+                android:layout_marginLeft="@dimen/dp_40"
+                android:background="@drawable/shape_sure_8"
+                android:id="@+id/dialog_sure"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_45"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="确定"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/sp_14" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
